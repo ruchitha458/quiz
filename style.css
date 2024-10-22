@@ -1,0 +1,111 @@
+/* Basic body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease;
+}
+
+/* Quiz container styling */
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+    transform: scale(1.02);
+}
+
+/* Question styling */
+.question-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Answer list styling */
+.answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.answers li input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Styling for the labels (answer options) */
+.answers li label {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.answers li:hover label {
+    color: #3498db;
+}
+
+/* Button styling */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Feedback message styling */
+.quiz-container h2 {
+    font-size: 20px;
+    color: #333;
+    padding: 10px 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 90%;
+    }
+
+    .question-container h2 {
+        font-size: 20px;
+    }
+
+    .answers li label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
